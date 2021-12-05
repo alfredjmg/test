@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(199, 199, 199) !important;
+}
+
+.input-header {
+  background-color: red !important;
+  display: flex !important;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.content-container {
+  margin-top: 3vh;
+  display: flex !important;
+  text-align: center;
+  justify-content: center;
+}
+.content {
+  width: 60%;
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 50vh;
+}
+
+.title-content {
+  font-size: 1.5vw;
+}
+
+.palindrome-text {
+  text-align: left;
+}
+
+.error-element {
+  text-align: left;
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 80%;
+  }
+  .title-content {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title-content {
+    font-size: 4vw;
+  }
+}

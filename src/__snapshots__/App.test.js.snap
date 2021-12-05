@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first snapshot test testing app button 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="header-container"
+    >
+      <form
+        className="row input-header"
+        onSubmit={[Function]}
+      >
+        <div
+          className="col-5"
+        >
+          <label
+            className="visually-hidden"
+            htmlFor="inputText"
+          >
+            Insert text
+          </label>
+          <input
+            className="form-control "
+            id="inputText"
+            name="inputText"
+            onChange={[Function]}
+            placeholder="Insert text"
+            type="text"
+          />
+        </div>
+        <div
+          className="col-auto"
+        >
+          <button
+            className="btn btn-primary"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="content-container"
+    >
+      <div
+        className="content row"
+      >
+        <div
+          className="title-content col-12 col-md-2"
+        >
+          Results:
+        </div>
+        <div
+          className="col-12 col-md-10"
+        />
+        <div
+          className="col-12 col-md-2"
+        />
+        <div
+          className="col-12 col-md-8"
+        >
+          <label
+            className="visually-hidden"
+            htmlFor="exampleFormControlInput1"
+          />
+          <input
+            className="form-control"
+            disabled={true}
+            id="exampleFormControlInput1"
+            placeholder="First text"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          className="col-12 col-md-2"
+        />
+        <div
+          className="col-12 col-md-2"
+        />
+        <div
+          className="palindrome-text col-12 col-md-8"
+        >
+          Palindrome: 
+          <span
+            id="palindrome-answer"
+          >
+            
+          </span>
+        </div>
+        <div
+          className="col-12 col-md-2"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
