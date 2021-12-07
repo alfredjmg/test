@@ -1,9 +1,17 @@
-import React, { Fragment, useState, useContext, useEffect } from "react";
+import React from "react";
+import { useSelector } from 'react-redux';
 import "./App.css";
 import Error from "../error/error";
 
-const Content = (props) => {
-  let { isPalindrome, revertedText, errorContent, activeError } = props;
+const Content = ({
+  errorContent,
+  activeError,
+}) => {
+  const {
+    palindromeData,
+    loadingPalindromeError,
+  } = useSelector((state) => state.palindrome);
+
   return (
     <>
       <div className="content-container">
@@ -22,16 +30,24 @@ const Content = (props) => {
               id="exampleFormControlInput1"
               placeholder="First text"
               disabled
-              value={revertedText}
+              value={palindromeData?.text || ''}
             />
           </div>
           <div className="col-12 col-md-2"></div>
           <div className="col-12 col-md-2"></div>
           <div className="palindrome-text col-12 col-md-8">
-            Palindrome: <span id="palindrome-answer">{isPalindrome}</span>
+            Palindrome: <span id="palindrome-answer">{
+              palindromeData && String(palindromeData?.palindrome)
+            }</span>
           </div>
           <div className="col-12 col-md-2"></div>
-          {activeError ? <Error errorContent={errorContent} /> : null}
+          {
+            loadingPalindromeError || activeError
+              ? (
+                <Error errorContent={loadingPalindromeError || errorContent} />
+              )
+              : null
+          }
         </div>
       </div>
     </>

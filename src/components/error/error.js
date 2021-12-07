@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useContext, useEffect } from "react";
+import React from "react";
 
 const Error = (props) => {
   let { errorContent } = props;

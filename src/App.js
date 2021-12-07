@@ -1,12 +1,11 @@
-import React, { Fragment, useState, useContext, useEffect } from "react";
-import "./App.css";
+import React, { useState } from "react";
 import Header from "./components/header/header";
 import Content from "./components/content/content";
 
 function App() {
   const [textValue, setTextValue] = useState("");
-  const [isPalindrome, setIsPalindrome] = useState("");
-  const [revertedText, setReverdedText] = useState("");
+  // const [isPalindrome, setIsPalindrome] = useState("");
+  // const [revertedText, setReverdedText] = useState("");
   const [errorContent, setErrorContent] = useState("");
   const [activeError, setActiveError] = useState(false);
 
@@ -16,16 +15,16 @@ function App() {
         <Header
           textValue={textValue}
           setTextValue={setTextValue}
-          setIsPalindrome={setIsPalindrome}
+          // setIsPalindrome={setIsPalindrome}
           setErrorContent={setErrorContent}
-          setReverdedText={setReverdedText}
+          // setReverdedText={setReverdedText}
           setActiveError={setActiveError}
         />
         <Content
           activeError={activeError}
           errorContent={errorContent}
-          isPalindrome={isPalindrome}
-          revertedText={revertedText}
+        // isPalindrome={isPalindrome}
+        // revertedText={revertedText}
         />
       </div>
     </div>
